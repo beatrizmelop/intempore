@@ -1,0 +1,761 @@
+/* RESETANDO AS MARGENS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto Condensed;
+
+}
+
+/* IMPORTANDO FONTES PARA O PROJETO */
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap');
+
+/*  COMEÇANDO O MENU -----------------------------------------------------------------------*/
+
+header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* TIRANDO OS EFEITOS DE LISTA */
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: #212a3f;
+    text-decoration: none;
+}
+
+/* COLOCANDO ALTURA MÍNIMA NO MENU E ALINHANDO TODO O CONTEÚDO*/
+
+.navbar-menu {
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+.logo {
+    font-size: 0.9rem;
+    transition: all 0.6s ease-in-out;
+}
+
+.logo:hover{
+    color: #e4339a;
+    font-size: 1.4rem;
+}
+
+.nav-menu-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* CRIANDO A TRANSIÇÃO AO PASSAR O MOUSE NO MENU */
+
+.nav-link-menu:hover {
+    color: rgb(223, 28, 109);
+}
+
+/* ESCONDENDO O MENU HAMBÚRGUER */
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+/* CRIANDO O DESENHO EM CSS DO MENU HAMBÚRGUER */
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #212a3f;
+    transition: all 0.3s ease-in-out;
+}
+
+/* BOTÃO DE LOGIN NO NAVEGADOR */
+
+.btn1 {
+    cursor: pointer;
+    border: none;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(223, 28, 109);
+    opacity: 70%;
+    color: #fff;
+    transition: all 0.7s ease-in-out;
+}
+
+.btn1:hover {
+    opacity: 100%;
+}
+
+/* ESTILIZANDO A ÁREA DE LOGIN --------------------------------------------------------------------------------------------*/
+
+.overlay-menu {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    background: rgb(255,255,255);
+    transition: all 0.5s ease-out;
+
+
+}
+
+.overlay-content-menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(22, 22, 22);
+}
+
+
+.container-login {
+    background-color: whitesmoke;
+    padding: 2px;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 darkgrey;
+  }
+  
+form {
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 100%;
+  }
+  
+.buttonsForm {
+    margin-top: 20px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 rgb(223, 28, 109);
+}
+  
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+}
+  
+.btnColor {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, #dd3e9b, #e494c3);
+    border-radius: 30px;
+    transition: .3s;
+}
+  
+input[type="text"], input[type="password"], #region {
+    border: none;
+    margin-top: 15px;
+    border-radius: 60px;
+    padding: 8px 0 8px 35px;
+    outline: none;
+    width: 100%;
+    transition: e;
+}
+
+#numero, #endereco, #bairro, #cidade {
+    border: 1px solid rgb(158, 157, 157);
+} 
+
+button[type="submit"] {
+    background: #e459aa;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 15px;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+  
+.divCheck {
+    margin: 10px 0 0 5px;
+    width: 80%;
+    font-size: 13px;
+}
+  
+#signin {
+    left: 25px;
+}
+  
+#signup {
+    left: 450px;
+    
+}
+  
+i {
+    position: absolute;
+    left: 0;
+    padding: 10px 10px;
+}
+  
+.iEmail {
+    top: 15px;
+}
+  
+.iPassword {
+    top: 70px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0px;
+    right: 80px;
+    font-size: 60px;
+    text-decoration: none;
+    color: #212a3f;
+    transition: all 0.5s ease-in;
+
+}
+
+.closebtn:hover{
+    color: rgb(223, 28, 109);
+}
+
+
+/* ALINHANDO O TEXTO PRINCIPAL DO SERVIÇO */
+
+/* TEXTO PRINCIPAL */
+
+.texto-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+}
+
+.texto-main-principal{
+    width: 70%;
+}
+
+.texto-main-principal h1{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.texto-main-principal p {
+   font-size: max(15px, 1vw);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.texto-main-principal p::first-letter {
+    color: #212a3f;
+    font-size: 50px;
+    line-height: 1;
+    float: left;
+    padding: 5px;
+}
+
+
+/* CARDS */
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 1090px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper .table {
+    background: #fff;
+    width: calc(33% - 20px);
+    padding: 30px 30px;
+    position: relative;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table .price-section {
+    display: flex;
+    justify-content: center;
+}
+
+.table .price-area {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.price-area .inner-area {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 117px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.price-area .inner-area .text {
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    top: -10px;
+    left: 17px;
+}
+
+.price-area .inner-area .price {
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
+}
+
+.table .package-name {
+    width: 100%;
+    height: 2px;
+    margin: 35px 0;
+    position: relative;
+}
+
+.table .package-name::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    background: #fff;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+}
+
+.table .features li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features li .list-name {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.features li .icon {
+    font-size: 15px;
+}
+
+.features li .icon.check {
+    color: #2db94d;
+}
+
+.features li .icon.cross {
+    color: #cd3241;
+}
+
+.table .btn {
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+.table .btn button {
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.table .btn button:hover {
+    border-radius: 5px;
+}
+
+.basico .features li::selection {
+    background: #ffd861;
+}
+
+.basico ::selection,
+.basico .price-area,
+.basico .inner-area {
+    background: #ffd861;
+}
+
+.basico .btn button {
+    border: 2px solid #ffd861;
+    background: #fff;
+    color: #ffd861;
+}
+
+.basico .btn button:hover {
+    background: #ffd861;
+    color: #fff;
+}
+
+.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+.premium .btn button {
+    background: #e459aa;
+}
+
+.premium .btn button:hover {
+    background: #e4339a;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area {
+    background: #43ef8b;
+}
+
+.ultimate .btn button {
+    border: 2px solid #43ef8b;
+    color: #43ef8b;
+    background: #fff;
+}
+
+.ultimate .btn button:hover {
+    background: #43ef8b;
+    color: #fff;
+}
+
+.basico .package-name {
+    background: #ffecb3;
+}
+
+.premium .package-name {
+    background: #e494c3;
+}
+
+.ultimate .package-name {
+    background: #baf8d4;
+}
+
+.basico .package-name::before {
+    content: "Basico";
+}
+
+.premium .package-name::before {
+    content: "normal";
+    font-size: 24px;
+}
+
+.ultimate .package-name::before {
+    content: "Premium";
+    font-size: 24px;
+}
+
+@media (max-width: 1020px) {
+    .wrapper .table {
+        width: calc(50% - 20px);
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 698px) {
+    .wrapper .table {
+        width: 100%;
+    }
+}
+
+::selection {
+    color: #fff;
+}
+
+.table .ribbon {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    overflow: hidden;
+}
+
+.table .ribbon::before,
+.table .ribbon::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    display: block;
+    border: 7px solid #4606ac;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.table .ribbon::before {
+    top: 0px;
+    right: 15px;
+}
+
+.table .ribbon::after {
+    bottom: 15px;
+    left: 0px;
+}
+
+.table .ribbon span {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 200px;
+    background: #e459aa;
+    padding: 10px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+.circle {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto Condensed;
+}
+
+/* EXEMPLOS  */
+
+.exemplos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #212a3f;
+}
+
+.cliente-exemplo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+.cliente-exemplo a {
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: #212a3f;
+    margin: 20px 0px 0px 0px;
+    padding: 5px 10px 5px 0px;
+    border: 1px solid #212a3f;
+    border-radius: 20px;
+    transition: all 1s ease-in-out
+}
+
+.cliente-exemplo a:hover{
+    background-color: #dd3e9b;
+    margin: 20px 0px 0px 0px;
+    color: white;
+    border:none
+}
+
+
+
+/* RELÓGIO */
+
+.relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cronometro-container {
+  width: 100%;
+  max-width: 480px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+  color: #212a3f;
+}
+
+.cronometro-container > .time-container {
+  text-align: center;
+  padding: 50px;
+}
+.cronometro-container > .time-container > span {
+  font-size: 104px;
+  color: #212a3f
+}
+
+.cronometro-container > .buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.cronometro-container > .buttons-container > button {
+  font-size: 16px;
+  outline: 0px;
+  padding: 8px 0px;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+  background-color: #dd3e9b;
+  color: rgba(255, 255, 255, 1);
+  transition: 0.5s;
+}
+
+.cronometro-container > .buttons-container > button:disabled {
+  background-color: #dd3e9b;
+  opacity: 50%;
+  cursor: default;
+}
+
+.cronometro-container > .buttons-container > button:hover {
+  background-color: #cf0c7e;
+}
+
+.cronometro-container > .buttons-container > button:disabled:hover {
+    background-color: #e27db8;
+    opacity: 50%;
+}
+
+/* FOOTER */
+
+.container-footer{
+    max-width: 100%;
+    max-height: 40px;
+}
+
+/*  RESPONSIVIDADE */
+
+@media (max-width:800px) {
+
+    /* MENU HAMBURGUER */
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu-menu {
+        position: fixed;
+        left: -100%;
+        top: 71px;
+        padding: 10px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #212a3f;
+        border-bottom: px solid rgb(223, 28, 109);
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        transition: 0.3s;
+        z-index: 9;
+    }
+
+    .nav-item-menu {
+        margin: 16px 0;
+    }
+
+    .nav-link-menu {
+        color: #dee2e6;
+    }
+
+    .nav-menu-menu.active {
+        left: 0;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 80px;
+        font-size: 25px;
+        text-decoration: none;
+        color: #212a3f;
+        transition: all 0.5s ease-in;
+        z-index: 9;
+        
+    }
+    /* */
+    .texto-main-principal p {
+      font-size: 2vh;
+    }
+
+    .cliente-exemplo a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        color: #212a3f;
+        margin: 20px 0px 0px 0px;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid #212a3f;
+        border-radius: 20px;
+        transition: all 1s ease-in-out
+    }
+
+    .cliente-exemplo a:hover{
+        background-color: #dd3e9b;
+        margin: 20px 0px 0px 0px;
+        color: white;
+        border:none
+    }
+
+    /* FOOTER */
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+}
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- BOX ICONES -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Roboto+Condensed:ital,wght@0,300;1,300&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--FontAwesome - login -->
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<body id="checkout-page">
+    <header>
+
+        <!--CRIAÇÃO DO MENU-->
+        <nav class="navbar-menu">
+            <a href="#" class="logo">In Tempore</a>
+            <ul class="nav-menu-menu">
+                <li class="nav-iten-menu">
+                    <a href="#" class="nav-link-menu">Home</a>
+                </li>
+                <li class="nav-iten-menu">
+                    <a href="servicos.html" class="nav-link-menu">Serviços</a>
+                <li class="nav-iten-menu">
+                    <a href="contato.html" class="nav-link-menu">Contato</a>
+                </li>
+                <input type="button-menu" value="login/registre-se" class="btn1" onclick="logar()">
+            </ul>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div id="menu-login" class="overlay-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="fechar()">&times;</a>
+
+            <div class="overlay-content-menu">
+                <div class="container-login">
+                    <div class="buttonsForm">
+                        <div class="btnColor"></div>
+                        <button id="btnSignin">Login</button>
+                        <button id="btnSignup">Registrar</button>
+                    </div>
+
+                    <form id="signin">
+                        <input type="text" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <div class="divCheck">
+                            <input type="checkbox" />
+                            <span>Lembrar Password</span>
+                        </div>
+                        <button type="submit">Entrar</button>
+                    </form>
+
+                    <form id="signup">
+                        <input type="text" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <input type="password" placeholder="Password" />
+                        <input id="cep" type="text" minlength="8" maxlength="8" placeholder="Cep">
+                        <input type="text" id="numero" placeholder="numero" disabled>
+                        <input type="text" id="endereco" placeholder="Rua" disabled>
+                        <input type="text" id="bairro" placeholder="Bairro" disabled>
+                        <input type="text" id="cidade" placeholder="Cidade" disabled>
+                        <div class="divCheck">
+                        </div>
+                        <button type="submit">Registre-se</button>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!-- BANNER DA MINHA HOME -->
+    <main>
+        <aside>
+            <div class="banner">
+
+                <div class="texto">
+                    <h1>Psicólogos e terapia online ao seu alcance</h1>
+                    <P>Impulsionamos o crescimento pessoal e profissional. Do bem-estar ao pico de desempenho,
+                        <strong>acelere a mudança que quer ver em você.</strong>
+                    </P>
+                    <input type="submit" value="Inscreva-se agora">
+                </div>
+
+            </div>
+
+        </aside>
+        <article>
+
+            <div class="imagem-banner">
+                <img src="assets/img/logoflu.png" alt="">
+            </div>
+
+        </article>
+    </main>
+    <!-- ÁREA ONDE MOSTRAMOS ALGUNS DOS NOSSOS PROFISSIONAIS  -->
+    <section class="nossos-sv">
+
+        <div class="img-sv">
+            <img src="assets/img/imagem-sv.png" alt="">
+        </div>
+
+        <div class="form-sv">
+
+            <h2>Conheça os nossos Profissionais</h2>
+            <p>Profissionais de psicologia graduados e registrados no Conselho Regional de Psicologia para o exercício da profissão,
+                com cadastro específico – e-Psi – para atendimento por chamadas de vídeo. Todos passam por um processo seguro
+                de verificação e credenciamento, além de aderirem a rigorosos códigos de ética e sigilo.
+            </p>
+
+            <form action="">
+                <select id="profissioanais" name="profissioanais">
+                    <option disabled selected value="">Selecione um assunto</option>
+                    <option value="home-office">Adaptação ao home-office</option>
+                    <option value="ansiedade">Ansiedade</option>
+                    <option value="tempo">Organizar o seu tempo</option>
+                    <option value="cyber">Cyber Psicologia</option>
+                    <option value="depressao">Depressão</option>
+                    <option value="Desenvolvimento">Desenvolvimetno de competências profissionais</option>
+                    <option value="incertezas">Incertezas sobre o futuro</option>
+                    <option value="aprendizagem">Orientação com problemas de aprendizagem</option>
+                    <option value="quarentenaIsolamento">Quarentena e Isolamento Social</option>
+                    <option value="saudeMental">Saúde Mental</option>
+                    <option value="sindromePanico">Síndrome do Pânico</option>
+                    <option value="tdah">TDAH (Transtorno de Déficit de Atenção e Hiperatividade)</option>
+                </select>
+                <div class="btn-form">
+                    <input type="submit" value="Procurar">
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--CARDS DE NOTÍCIAS-->
+    <div class="container-news">
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="assets/img/mulher-sorrindo.webp" class="card-img-top" alt="A Street in Europe">
+                    <div class="card-body">
+                        <h5 class="card-title">Saúde mental x trabalho</h5>
+                        <p class="card-text">A saúde mental é apontada como fundamental para a felicidade. Mais do que ter a renda duplicada.
+                            Segundo uma pesquisa feita na Inglaterra, a depressão e a ansiedade lideram os fatores que mais
+                            impactam negativamente o bem-estar.</p>
+                        <a href="#" class="btn btn-primary">Ler mais +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="assets/img/medico-oferecendo-teleconsulta-medica_23-2149329013.webp" class="card-img-top" alt="PSICOLOGIA">
+                    <div class="card-body">
+                        <h5 class="card-title">A importância do atendimento psicológico</h5>
+                        <p class="card-text">Um levantamento feito pelo LinkedIn, durante a pandemia, apontou que 62% das pessoas estão mais ansiosas
+                            e estressadas com o trabalho do que estavam antes da introdução das atividades remotas,prejudicando
+                            a comunicação e inteligência.</p>
+                        <a href="#" class="btn btn-primary">Ler mais +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img src="assets/img/casal-em-forma-levantando-halteres-na-academia_329181-19979.webp" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">Atividade FÍsica</h5>
+                        <p class="card-text">Além de melhorar a aptidão física, o exercício físico regular também pode melhorar a capacidade cognitiva
+                            e reduzir os níveis de ansiedade e estresse em geral. Os exercícios ajudam a melhorar a autoestima,
+                            a imagem corporal, a cognição e a função social de pacientes em risco de saúde mental.</p>
+                        <a href="#" class="btn btn-primary">Ler mais +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER BOOTSTRAP-->
+    <div class="container-footer">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Equipe</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-muted">Contato</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+    <!--BOOTSTRAP JAVASCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

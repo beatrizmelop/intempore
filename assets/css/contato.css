@@ -1,0 +1,43 @@
+
+
+.contact{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    
+}
+
+input[type="text"]{
+    background-color: #eeebeb;
+    color: black;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 12px rgb(22, 22, 22, 0.2)
+}
+
+contact, textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    box-shadow: 2px 2px 12px rgb(22, 22, 22, 0.2);
+    background-color: #eeebeb;
+}
+
+@media (max-width:800px) {
+
+    .contact{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        padding: 20px 20px 10px 20px;
+        
+    }
+
+}
+
+
